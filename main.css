@@ -4,8 +4,10 @@ body {
   display: grid;
   
   grid-template-columns: repeat(4, [col] 1fr);
-  grid-template-rows: 50px 40px 65px; 
+  grid-template-rows: 10% 20% 60%; 
   grid-row-gap: 5px;
+  max-width: 360px;
+  height: 640px;
   /*TODO set max height and width to popular device like iphone 7 plus*/
 }
 
@@ -37,7 +39,7 @@ body {
 }
 
 #keypad .double-row {
-  grid-row: auto/span 2;
+  grid-row: auto / span 2;
 }
 
 #keypad .double-column {
@@ -49,4 +51,10 @@ body {
 
 h1 {
   color: blue;
+}
+
+#number {
+  height: 60px;
+  font-size: 40px;
+  text-align: right;
 }
